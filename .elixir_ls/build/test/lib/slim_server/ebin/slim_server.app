@@ -1,0 +1,9 @@
+{application,slim_server,
+             [{applications,[kernel,stdlib,elixir,logger,poison,plug_cowboy]},
+              {description,"slim_server"},
+              {modules,['Elixir.SlimServer','Elixir.SlimServer.Application',
+                        'Elixir.SlimServer.EndPoint',
+                        'Elixir.SlimServer.SimpleCall']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.SlimServer.Application',[]}}]}.
