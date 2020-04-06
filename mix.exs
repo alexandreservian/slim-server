@@ -21,7 +21,8 @@ defmodule SlimServer.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.0"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      {:remix, "~> 0.0.1", only: :dev}
     ]
   end
 end
