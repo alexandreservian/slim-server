@@ -11,7 +11,7 @@ defmodule SlimServer.EndPoint do
     Logger.info("Starting server at http://localhost:#{port}/")
     Plug.Cowboy.child_spec(scheme: :http, plug: __MODULE__, options: [port: port])
   end
-  defp getPort, do: Application.get_env :slim_server, :port, 4001
+  defp getPort, do: Application.get_env :slim_server, :port, 8080
 
   match _ do
     send_resp(conn, 404, "Oops!")

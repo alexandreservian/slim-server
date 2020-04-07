@@ -1,3 +1,3 @@
 use Mix.Config
 
-config :slim_server, port: 4001
+config :slim_server, port: 8080
